@@ -9,7 +9,7 @@ export const Services = () => {
   };
 
   const branchImages = {
-    'Structural Engineering': 'https://unsplash.com/photos/black-metal-frame-under-blue-sky-during-daytime-BGlWmZRXwOk',
+    'Structural Engineering': 'https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?',
     'Architectural Design': 'https://images.unsplash.com/photo-1495306765622-7639a965c271?',
     'Structural Design': 'https://images.unsplash.com/photo-1698978195855-461a7811b1ec?',
     'Project Management': 'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?',
@@ -100,6 +100,7 @@ export const Services = () => {
 
             <div className="servicesDisplay">
               <motion.p
+              className="servicesDisplayText"
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}

@@ -227,6 +227,7 @@
   align-items: start;
   padding: 150px 0;
   gap: 30px;
+  overflow: hidden;
 }
 
 .servicesInfo {
@@ -338,15 +339,16 @@
   cursor: pointer;
 }
 
-.sevicesDisplay {
+.servicesDisplay {
   display: flex;
   flex-direction: column;
   width: 100%;
+  max-height: 675px;
   overflow: hidden;
 }
 
-.sevicesDisplay p {
-  font-size: 70px;
+.servicesDisplayText {
+  font-size: 55px;
   font-weight: 700;
   line-height: 84px;
   letter-spacing: -0.03em;
@@ -358,6 +360,7 @@
   width: 100%;
   height: auto;
   display: block;
+  object-fit: cover;
 }
 
 .portSection {
@@ -1760,7 +1763,7 @@ label {
     overflow: hidden;
   }
 
-  .servicesDisplay p {
+  .servicesDisplayText {
     font-size: 25px;
     font-weight: 700;
     line-height: 48px;
@@ -3056,13 +3059,13 @@ label {
   }
 
   .servicesBar::-webkit-scrollbar-track {
-    display: none;
+    opacity:0;
   }
   .servicesBar::-webkit-scrollbar-thumb {
-    display: none;
+    opacity: 0;
   }
   .servicesBar:scrollbar-track-color {
-    display: none;
+    opacity: 0;
   }
   .servicesBar:scrollbar-width {
     width: 0px;
@@ -3089,7 +3092,7 @@ label {
     cursor: pointer;
   }
 
-  .sevicesDisplay {
+  .servicesDisplay {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -3097,8 +3100,8 @@ label {
     overflow: hidden;
   }
 
-  .sevicesDisplay p {
-    font-size: 40px;
+  .servicesDisplayText {
+    font-size: 35px;
     font-weight: 700;
     line-height: 48px;
     letter-spacing: -0.03em;
@@ -4460,14 +4463,14 @@ label {
     cursor: pointer;
   }
 
-  .sevicesDisplay {
+  .servicesDisplay {
     display: flex;
     flex-direction: column;
     width: 100%;
     overflow: hidden;
   }
 
-  .sevicesDisplay p {
+  .servicesDisplay p {
     font-size: 45px;
     font-weight: 700;
     line-height: 54px;
