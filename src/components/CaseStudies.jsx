@@ -1,3 +1,7 @@
+import { motion } from "framer-motion";
+
+
+
 export const CaseStudies = () => {
   const data = [
     {
@@ -38,7 +42,16 @@ export const CaseStudies = () => {
         <div className="caseContainer">
           <div className="caseHeader">
             <div className="caseHeaderOneContainer">
-              <div className="caseHeaderOne">
+              <motion.div
+                 initial="hidden"
+                 whileInView="visible"
+                 viewport={{ once: true }}
+                 transition={{ duration: 0.3 }}
+                 variants={{
+                   visible: { opacity: 1, x: 0 },
+                   hidden: { opacity: 0, x: -50 },
+                 }}
+              className="caseHeaderOne">
                 <p>OUR CASE STUDIES</p>
                 <p>
                   Unveiling the Blueprint to Success: Dive into Our Compelling
@@ -47,24 +60,42 @@ export const CaseStudies = () => {
                   Define Our Approach to Engineering Excellence.
                 </p>
                 <button>see all</button>
-              </div>
+              </motion.div>
             </div>
             <div className="caseHeaderTwoContainer">
-              <div className="caseHeaderTwo">
+              <motion.div
+                 initial="hidden"
+                 whileInView="visible"
+                 viewport={{ once: true }}
+                 transition={{ duration: 0.3 }}
+                 variants={{
+                   visible: { opacity: 1, x: 0 },
+                   hidden: { opacity: 0, x: 50 },
+                 }}
+              className="caseHeaderTwo">
                 <p>Unlocking Possibilities, Shaping Landscapes</p>
                 <p>
                   With our expertise in land development and environmental
                   engineering, we unlock the hidden potential of spaces,
                   transforming landscapes into vibrant, functional habitats.
                 </p>
-              </div>
+              </motion.div>
             </div>
           </div>
 
           <div className="caseStudiesContainer">
             {data.map((data) => (
               <div key={data.id} className="caseStudiesBox">
-                <div className="caseStudiesBoxText">
+                <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                transition={{ duration: 0.3 }}
+                variants={{
+                  visible: { opacity: 1, x: 0 },
+                  hidden: { opacity: 0, x: -50 },
+                }}
+                className="caseStudiesBoxText">
                   <p>{data.projectName}</p>
                   <p>{data.desc}</p>
 
@@ -72,12 +103,21 @@ export const CaseStudies = () => {
                     <button>{data.date}</button>
                     <button>{data.location}</button>
                   </div>
-                </div>
+                </motion.div>
 
-                <div className="caseStudiesBoxImg">
+                <motion.div
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.3 }}
+                  variants={{
+                    visible: { opacity: 1, x: 0 },
+                    hidden: { opacity: 0, x: 50 },
+                  }}
+                className="caseStudiesBoxImg">
                   <img src={data.image} alt={data.location}></img>
                   <button>View</button>
-                </div>
+                </motion.div>
               </div>
             ))}
           </div>
