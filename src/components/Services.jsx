@@ -1,6 +1,22 @@
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 export const Services = () => {
+  const [selectedBranch, setSelectedBranch] = useState('Architectural Design');
+
+  const handleBranchSelect = (branch) => {
+    setSelectedBranch(branch);
+  };
+
+  const branchImages = {
+    'Structural Engineering': 'https://unsplash.com/photos/black-metal-frame-under-blue-sky-during-daytime-BGlWmZRXwOk',
+    'Architectural Design': 'https://images.unsplash.com/photo-1495306765622-7639a965c271?',
+    'Structural Design': 'https://images.unsplash.com/photo-1698978195855-461a7811b1ec?',
+    'Project Management': 'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?',
+    'Environmental Consulting': 'https://images.unsplash.com/photo-1680458841796-360a4cf4b3b1?'
+  };
+
+
   return (
     <>
       <section className="servicesSection">
@@ -79,14 +95,10 @@ export const Services = () => {
           </div>
 
           <div className="sevicesDisplayContainer">
-            <div className="servicesBar">
-              <p>Structural engineering</p>
-              <p>Architectural design</p>
-              <p>Structural design</p>
-              <p>Project management</p>
-              <p>Environmental consulting</p>
-            </div>
-            <div className="sevicesDisplay">
+
+            <Sidebar onBranchSelect={handleBranchSelect}/>
+
+            <div className="servicesDisplay">
               <motion.p
                 initial="hidden"
                 whileInView="visible"
@@ -97,8 +109,9 @@ export const Services = () => {
                   hidden: { opacity: 0, y: -20 },
                 }}
               >
-                Architectural design
+                {selectedBranch}
               </motion.p>
+              <div className="servicesImg">
               <motion.img
                 initial="hidden"
                 whileInView="visible"
@@ -108,9 +121,10 @@ export const Services = () => {
                   visible: { opacity: 1, scale: 1 },
                   hidden: { opacity: 0, scale: 1.2 },
                 }}
-                src="https://plus.unsplash.com/premium_photo-1680553491336-644d5955ea50?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHx8"
-                alt="picture"
+                src={branchImages[selectedBranch]}
+                alt={selectedBranch}
               />
+              </div>
             </div>
           </div>
         </div>
@@ -118,3 +132,25 @@ export const Services = () => {
     </>
   );
 };
+
+
+const Sidebar=({onBranchSelect})=>{
+  const branches = [
+    'Structural Engineering',
+    'Architectural Design',
+    'Structural Design',
+    'Project Management',
+    'Environmental Consulting'
+  ];
+  return(
+    <>
+      <div className="servicesBar">
+      {branches.map((branch) => (
+          <p key={branch} onClick={() => onBranchSelect(branch)}>
+            {branch}
+          </p>
+        ))}
+            </div>
+    </>
+  )
+}

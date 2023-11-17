@@ -4,6 +4,7 @@ import SOOFT from "../assets/sOOFTCARD.png";
 import ABCARD from "../assets/ABCARD.png";
 import IYOCARD from "../assets/IYOCARD.png";
 import STCARD from "../assets/STCARD.png";
+import { motion } from "framer-motion";
 export const Team = () => {
   const data = [
     {
@@ -57,7 +58,16 @@ export const Team = () => {
           <div className="teamListContainer">
             {data.map((data) => (
               <>
-                <div className="teamBox">
+                <motion.div
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.3 }}
+                  variants={{
+                    visible: { opacity: 1, scale:1},
+                    hidden: { opacity: 0, scale: 0.6},
+                  }}
+                className="teamBox">
                   <div className="teamBoxImg">
                     <img src={data.img} alt="" />
                   </div>
@@ -70,14 +80,23 @@ export const Team = () => {
                     <p>{data.position}</p>
                     <p>{data.role}</p>
                   </div>
-                </div>
+                </motion.div>
               </>
             ))}
           </div>
 
           <div className="TeamInfo">
             
-              <div className="teamInfoOne">
+              <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                transition={{ duration: 0.3 }}
+                variants={{
+                  visible: { opacity: 1, x: 0 },
+                  hidden: { opacity: 0, x: -50 },
+                }}
+              className="teamInfoOne">
                 <p>
                   At Structura, we believe that behind every successful project
                   lies a dedicated and talented team. Our "Meet the Team"
@@ -85,10 +104,19 @@ export const Team = () => {
                   who bring their passion, skills, and unwavering commitment to
                   engineering excellence.
                 </p>
-              </div>
+              </motion.div>
            
             
-              <div className="teamInfoTwo">
+              <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                transition={{ duration: 0.3 }}
+                variants={{
+                  visible: { opacity: 1, x: 0 },
+                  hidden: { opacity: 0, x: 50 },
+                }}
+              className="teamInfoTwo">
                 <p>
                   Each member of our team is handpicked for their expertise,
                   experience, and innovative mindset. From civil engineers and
@@ -96,7 +124,7 @@ export const Team = () => {
                   diverse and multidisciplinary team is united by a shared
                   vision of transforming ideas into reality.
                 </p>
-              </div>
+              </motion.div>
             
           </div>
         </div>

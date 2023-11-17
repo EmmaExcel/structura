@@ -356,7 +356,7 @@
 
 .servicesDisplay img {
   width: 100%;
-  height: 467px;
+  height: auto;
   display: block;
 }
 
@@ -1005,8 +1005,6 @@
   height: auto;
 }
 
-
-
 .responSliderBox {
   height: 390px;
   width: auto;
@@ -1105,11 +1103,11 @@
   cursor: pointer;
 }
 
-.teamSection p{
+.teamSection p {
   color: black;
 }
 
-.teamSection{
+.teamSection {
   height: auto;
   width: 100%;
   display: flex;
@@ -1118,51 +1116,48 @@
   overflow: hidden;
 }
 
-.teamContainer{
+.teamContainer {
   width: 97%;
   height: 100%;
   padding: 80px 0;
 }
 
-.teamHeader{
+.teamHeader {
   padding: 20px 0;
 }
 
-.scrollheader{
+.scrollheader {
   display: flex;
   align-items: center;
   height: auto;
   gap: 20px;
 }
 
-.scrollheader p{
-font-size: 55px;
-font-weight: 600;
-line-height: 66px;
-letter-spacing: 0em;
-text-align: left;
-color: #ff4d00;
+.scrollheader p {
+  font-size: 55px;
+  font-weight: 600;
+  line-height: 66px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ff4d00;
 }
 
-.scrollImg{
+.scrollImg {
   animation: spin 0.7s infinite;
   -webkit-animation: spin 10s infinite;
 }
 
-
 @keyframes spin {
-
-  100%{
+  100% {
     transform: rotate(360deg);
     -webkit-transform: rotate(360deg);
     -moz-transform: rotate(360deg);
     -ms-transform: rotate(360deg);
     -o-transform: rotate(360deg);
-}  
+  }
 }
 
-
-.teamListContainer{
+.teamListContainer {
   width: auto;
   display: flex;
   align-items: center;
@@ -1174,7 +1169,7 @@ color: #ff4d00;
   justify-content: center;
 }
 
-.teamBox{
+.teamBox {
   height: auto;
   width: auto;
   display: flex;
@@ -1182,33 +1177,31 @@ color: #ff4d00;
   gap: 8px;
 }
 
-.teamBoxImg{
+.teamBoxImg {
   height: 385px;
   width: 320px;
   overflow: hidden;
 }
 
-.teamBoxImg img{
+.teamBoxImg img {
   height: 100%;
   width: 100%;
 }
 
-.teamName p{
-
-font-size: 20px;
-font-weight: 400;
-line-height: 24px;
-letter-spacing: 0em;
-text-align: left;
-
+.teamName p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
 }
 
-.TeamRoles{
+.TeamRoles {
   display: flex;
   gap: 10px;
 }
 
-.TeamRoles p{
+.TeamRoles p {
   border: 1px solid black;
   padding: 5px 10px;
   border-radius: 20px;
@@ -1219,45 +1212,257 @@ text-align: left;
   font-size: 12px;
 }
 
-.TeamInfo{
+.TeamInfo {
   display: flex;
   flex-direction: column;
-  gap:80px;
+  gap: 80px;
   padding: 30px 0;
 }
 
-.teamInfoOne{
+.teamInfoOne {
   height: auto;
   width: 100%;
   display: flex;
   justify-content: start;
 }
 
-.teamInfoOne p{
+.teamInfoOne p {
   width: 45%;
-font-size: 20px;
-font-weight: 400;
-line-height: 24px;
-letter-spacing: 0em;
-text-align: left;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
 }
-.teamInfoTwo{
+.teamInfoTwo {
   height: auto;
   width: 100%;
   display: flex;
   justify-content: end;
 }
 
-.teamInfoTwo p{
+.teamInfoTwo p {
   width: 45%;
-font-size: 20px;
-font-weight: 400;
-line-height: 24px;
-letter-spacing: 0em;
-text-align: left;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
 }
 
+.contactSection {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.contactCon {
+  height: 100%;
+  width: 97%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 50px 0;
+}
+
+.contactBoxOneCon {
+  width: 60%;
+  height: 325px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  display: flex;
+  padding: 20px 20px;
+  background: #ececec;
+  gap: 80px;
+}
+
+.contactBoxOneInfo {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 30px;
+  flex: 2;
+}
+
+.contactBoxOneInfo p {
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 60px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: black;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.formInput {
+  border: none;
+  border-bottom: 1px solid black;
+  background-color: transparent;
+  outline: none;
+  height: 30px;
+  color: black;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+label {
+  color: black;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.formSubmit {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+.formSubmit button {
+  padding: 5px 10px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border: 1px solid black;
+  color: black;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  width: auto;
+}
+
+.contactBoxOneImg {
+  flex: 1;
+  width: 10%;
+  height: auto;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  overflow: hidden;
+}
+
+.contactBoxOneImg img {
+  height: 100%;
+  width: 100%;
+}
+
+.contactBoxTwoCon {
+  width: 40%;
+  height: 325px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px;
+  background: #d7d7d7;
+  gap: 30px;
+}
+
+.contactBoxTwoHeader {
+  display: flex;
+  gap: 20px;
+}
+
+.contactBoxTwoHeader p {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: black;
+}
+
+.contactBoxTwoHeader img {
+  width: 164px;
+  height: 50px;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  object-fit: cover;
+}
+
+.contactBoxTwoText {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: end;
+}
+
+.contactBoxTwoText p {
+  color: black;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  width: 60%;
+}
+
+.contactLink {
+  display: flex;
+  gap: 10px;
+}
+
+.contactLink p {
+  color: black;
+  padding: 5px 10px;
+  border: 1px solid black;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.contactLink p:hover {
+  background-color: white;
+  cursor: pointer;
+}
+
+.footerSection {
+  height: auto;
+  width: 100%;
+  background-color: black;
+}
+
+.footerCon {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+}
+
+.footerCon p {
+  font-size: 171px;
+  font-weight: 700;
+  line-height: 205px;
+  letter-spacing: -0.03em;
+  text-align: left;
+  color: #ff4d00;
+}
 
 @media (width <= 400px) {
   .navbar {
@@ -1547,7 +1752,7 @@ text-align: left;
     cursor: pointer;
   }
 
-  .sevicesDisplay {
+  .servicesDisplay {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -1555,7 +1760,7 @@ text-align: left;
     overflow: hidden;
   }
 
-  .sevicesDisplay p {
+  .servicesDisplay p {
     font-size: 25px;
     font-weight: 700;
     line-height: 48px;
@@ -1564,9 +1769,14 @@ text-align: left;
     color: #ff4d00;
   }
 
-  .servicesDisplay img {
+  .servicesImg{
     width: 100%;
-    height: 280px;
+    height: 400px;
+    overflow: hidden;
+  }
+  .servicesImg img {
+   height: 100%;
+   width: 100%;
     display: block;
     background-color: white;
   }
@@ -2074,7 +2284,6 @@ text-align: left;
     width: 90%;
   }
 
-  
   .responsesSection {
     width: 100%;
     height: auto;
@@ -2084,33 +2293,33 @@ text-align: left;
     background-color: #f3f3f3;
     overflow: hidden;
   }
-  
+
   .responsesContainer {
     width: 97%;
     height: 100%;
     padding: 50px 0;
   }
-  
+
   .responsesHeader {
     display: flex;
     height: 20rem;
     padding: 20px 0;
     flex-direction: column;
   }
-  
+
   .responHeaderOneContainer {
     flex: unset;
     height: 100%;
     display: flex;
     justify-content: start;
   }
-  
+
   .reponHeaderOne {
     display: flex;
     flex-direction: column;
     gap: 10px;
   }
-  
+
   .reponHeaderOne p:nth-child(1) {
     font-size: 14px;
     font-weight: 400;
@@ -2119,7 +2328,7 @@ text-align: left;
     text-align: left;
     color: black;
   }
-  
+
   .reponHeaderOne p:nth-child(2) {
     font-size: 10px;
     font-weight: 400;
@@ -2129,7 +2338,7 @@ text-align: left;
     color: #000000;
     width: 80%;
   }
-  
+
   .responHeaderTwoContainer {
     flex: unset;
     height: 100%;
@@ -2138,7 +2347,7 @@ text-align: left;
     justify-content: end;
     width: auto;
   }
-  
+
   .responHeaderTwo {
     display: flex;
     flex-direction: column;
@@ -2146,7 +2355,7 @@ text-align: left;
     align-items: start;
     width: 80%;
   }
-  
+
   .responHeaderTwo p:nth-child(1) {
     font-size: 14px;
     font-weight: 500;
@@ -2173,7 +2382,7 @@ text-align: left;
     gap: 20px;
     overflow: hidden;
   }
-  
+
   .sliderboxList {
     display: flex;
     gap: 20px;
@@ -2181,9 +2390,7 @@ text-align: left;
     width: 100%;
     height: auto;
   }
-  
-  
-  
+
   .responSliderBox {
     height: auto;
     width: auto;
@@ -2199,13 +2406,13 @@ text-align: left;
     -o-border-radius: 20px;
     cursor: pointer;
   }
-  
+
   .responBoxHeaderContainer {
     display: flex;
     gap: 10px;
     align-items: center;
   }
-  
+
   .repsonBoxImg {
     width: 55px;
     height: 45px;
@@ -2216,16 +2423,16 @@ text-align: left;
     -o-border-radius: 10px;
     overflow: hidden;
   }
-  
+
   .repsonBoxImg img {
     height: 100%;
     width: 100%;
   }
-  
+
   .responBoxHeaderText {
     width: 100%;
   }
-  
+
   .responBoxHeaderText p {
     color: black;
   }
@@ -2250,7 +2457,7 @@ text-align: left;
     letter-spacing: 0em;
     text-align: left;
   }
-  
+
   .responBoxText p {
     font-size: 8px;
     font-weight: 400;
@@ -2259,12 +2466,12 @@ text-align: left;
     text-align: left;
     color: black;
   }
-  
+
   .responSliderNav {
     display: flex;
     gap: 10px;
   }
-  
+
   .responSliderNav button {
     padding: 3px 10px;
     background-color: transparent;
@@ -2282,7 +2489,7 @@ text-align: left;
     cursor: pointer;
   }
 
-  .teamSection{
+  .teamSection {
     height: auto;
     width: 100%;
     display: flex;
@@ -2290,38 +2497,38 @@ text-align: left;
     align-items: center;
     overflow: hidden;
   }
-  
-  .teamContainer{
+
+  .teamContainer {
     width: 97%;
     height: 100%;
     padding: 80px 0;
   }
-  
-  .teamHeader{
+
+  .teamHeader {
     padding: 10px 0;
   }
-  
-  .scrollheader{
+
+  .scrollheader {
     display: flex;
     align-items: center;
     height: auto;
     gap: 20px;
   }
-  
-  .scrollheader p{
-  font-size: 25px;
-  font-weight: 600;
-  line-height: 30px;
-  letter-spacing: 0em;
-  text-align: left;
-  color: #ff4d00;
+
+  .scrollheader p {
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #ff4d00;
   }
-  
-  .scrollImg{
+
+  .scrollImg {
     scale: 0.7;
   }
-  
-  .teamListContainer{
+
+  .teamListContainer {
     width: auto;
     display: flex;
     align-items: center;
@@ -2330,42 +2537,40 @@ text-align: left;
     overflow: hidden;
     padding: 50px 0;
   }
-  
-  .teamBox{
+
+  .teamBox {
     height: auto;
     width: auto;
     display: flex;
     flex-direction: column;
     gap: 8px;
   }
-  
-  .teamBoxImg{
+
+  .teamBoxImg {
     height: 365px;
     width: 280px;
     overflow: hidden;
   }
-  
-  .teamBoxImg img{
+
+  .teamBoxImg img {
     height: 100%;
     width: 100%;
   }
-  
-  .teamName p{
-  
-  font-size: 17px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0em;
-  text-align: left;
-  
+
+  .teamName p {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
   }
-  
-  .TeamRoles{
+
+  .TeamRoles {
     display: flex;
     gap: 10px;
   }
-  
-  .TeamRoles p{
+
+  .TeamRoles p {
     border: 1px solid black;
     padding: 5px 10px;
     border-radius: 20px;
@@ -2375,15 +2580,225 @@ text-align: left;
     -o-border-radius: 20px;
     font-size: 12px;
   }
-  
-  .TeamInfo{
+
+  .TeamInfo {
     display: flex;
     flex-direction: column;
-    gap:80px;
+    gap: 80px;
     padding: 30px 0;
     display: none;
   }
-  
+
+  .contactSection {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .contactCon {
+    height: 100%;
+    width: 97%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 80px 0;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .contactBoxOneCon {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    display: flex;
+    padding: 20px 20px;
+    background: #ececec;
+    gap: 20px;
+  }
+
+  .contactBoxOneInfo {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 20px;
+    flex: 2;
+  }
+
+  .contactBoxOneInfo p {
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 60px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: black;
+  }
+
+  .contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .formInput {
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: transparent;
+    outline: none;
+    height: 30px;
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+  }
+
+  label {
+    color: black;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .formSubmit {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+  }
+
+  .formSubmit button {
+    padding: 5px 10px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border: 1px solid black;
+    color: black;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: auto;
+  }
+
+  .formSubmit button:hover {
+    background-color: white;
+    cursor: pointer;
+  }
+
+  .contactBoxOneImg {
+    flex: 1;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    overflow: hidden;
+    display: none;
+  }
+
+  .contactBoxOneImg img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .contactBoxTwoCon {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+    background: #d7d7d7;
+    gap: 20px;
+  }
+
+  .contactBoxTwoHeader {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .contactBoxTwoHeader p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: black;
+  }
+
+  .contactBoxTwoHeader img {
+    width: 90px;
+    height: 30px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    object-fit: cover;
+  }
+
+  .contactBoxTwoText {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: start;
+  }
+
+  .contactBoxTwoText p {
+    color: black;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 90%;
+  }
+
+  .contactLink {
+    display: flex;
+    gap: 10px;
+  }
+
+  .contactLink p {
+    color: black;
+    padding: 5px 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    font-size: 12px;
+  }
+
+  .contactLink p:hover {
+    background-color: white;
+    cursor: pointer;
+  }
+
+  .footerCon p {
+    color: #ff4d00;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: -0.03em;
+    text-align: left;
+  }
 }
 
 @media (400px <= width <= 779px) {
@@ -3210,33 +3625,33 @@ text-align: left;
     background-color: #f3f3f3;
     overflow: hidden;
   }
-  
+
   .responsesContainer {
     width: 97%;
     height: 100%;
     padding: 80px 0;
   }
-  
+
   .responsesHeader {
     display: flex;
     height: 24rem;
     padding: 20px 0;
     flex-direction: column;
   }
-  
+
   .responHeaderOneContainer {
     flex: unset;
     height: 100%;
     display: flex;
     justify-content: start;
   }
-  
+
   .reponHeaderOne {
     display: flex;
     flex-direction: column;
     gap: 10px;
   }
-  
+
   .reponHeaderOne p:nth-child(1) {
     font-size: 17px;
     font-weight: 400;
@@ -3245,7 +3660,7 @@ text-align: left;
     text-align: left;
     color: black;
   }
-  
+
   .reponHeaderOne p:nth-child(2) {
     font-size: 13px;
     font-weight: 400;
@@ -3255,7 +3670,7 @@ text-align: left;
     color: #000000;
     width: 80%;
   }
-  
+
   .responHeaderTwoContainer {
     flex: unset;
     height: 100%;
@@ -3264,7 +3679,7 @@ text-align: left;
     justify-content: end;
     width: auto;
   }
-  
+
   .responHeaderTwo {
     display: flex;
     flex-direction: column;
@@ -3272,7 +3687,7 @@ text-align: left;
     align-items: start;
     width: 80%;
   }
-  
+
   .responHeaderTwo p:nth-child(1) {
     font-size: 17px;
     font-weight: 500;
@@ -3299,7 +3714,7 @@ text-align: left;
     gap: 20px;
     overflow: hidden;
   }
-  
+
   .sliderboxList {
     display: flex;
     gap: 20px;
@@ -3307,9 +3722,7 @@ text-align: left;
     width: 100%;
     height: auto;
   }
-  
-  
-  
+
   .responSliderBox {
     height: auto;
     width: auto;
@@ -3325,13 +3738,13 @@ text-align: left;
     -o-border-radius: 20px;
     cursor: pointer;
   }
-  
+
   .responBoxHeaderContainer {
     display: flex;
     gap: 20px;
     align-items: center;
   }
-  
+
   .repsonBoxImg {
     width: 51px;
     height: 45px;
@@ -3342,16 +3755,16 @@ text-align: left;
     -o-border-radius: 10px;
     overflow: hidden;
   }
-  
+
   .repsonBoxImg img {
     height: 100%;
     width: 100%;
   }
-  
+
   .responBoxHeaderText {
     width: 100%;
   }
-  
+
   .responBoxHeaderText p {
     color: black;
   }
@@ -3376,7 +3789,7 @@ text-align: left;
     letter-spacing: 0em;
     text-align: left;
   }
-  
+
   .responBoxText p {
     font-size: 11px;
     font-weight: 400;
@@ -3385,12 +3798,12 @@ text-align: left;
     text-align: left;
     color: black;
   }
-  
+
   .responSliderNav {
     display: flex;
     gap: 10px;
   }
-  
+
   .responSliderNav button {
     padding: 3px 10px;
     background-color: transparent;
@@ -3408,109 +3821,314 @@ text-align: left;
     cursor: pointer;
   }
 
-  
-.teamSection{
-  height: auto;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  overflow: hidden;
-}
+  .teamSection {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+  }
 
-.teamContainer{
-  width: 97%;
-  height: 100%;
-  padding: 80px 0;
-}
+  .teamContainer {
+    width: 97%;
+    height: 100%;
+    padding: 50px 0;
+  }
 
-.teamHeader{
-  padding: 10px 0;
-}
+  .teamHeader {
+    padding: 10px 0;
+  }
 
-.scrollheader{
-  display: flex;
-  align-items: center;
-  height: auto;
-  gap: 20px;
-}
+  .scrollheader {
+    display: flex;
+    align-items: center;
+    height: auto;
+    gap: 20px;
+  }
 
-.scrollheader p{
-font-size: 25px;
-font-weight: 600;
-line-height: 30px;
-letter-spacing: 0em;
-text-align: left;
-color: #ff4d00;
-}
+  .scrollheader p {
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #ff4d00;
+  }
 
-.scrollImg{
-  scale: 0.7;
-}
+  .scrollImg {
+    scale: 0.7;
+  }
 
-.teamListContainer{
-  width: auto;
-  display: flex;
-  align-items: center;
-  gap: 70px;
-  flex-basis: auto;
-  overflow: hidden;
-  padding: 50px 0;
-}
+  .teamListContainer {
+    width: auto;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    flex-basis: auto;
+    overflow: hidden;
+    padding: 50px 0;
+  }
 
-.teamBox{
-  height: auto;
-  width: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
+  .teamBox {
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
 
-.teamBoxImg{
-  height: 385px;
-  width: 280px;
-  overflow: hidden;
-}
+  .teamBoxImg {
+    height: 385px;
+    width: 280px;
+    overflow: hidden;
+  }
 
-.teamBoxImg img{
-  height: 100%;
-  width: 100%;
-}
+  .teamBoxImg img {
+    height: 100%;
+    width: 100%;
+  }
 
-.teamName p{
+  .teamName p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
 
-font-size: 20px;
-font-weight: 400;
-line-height: 24px;
-letter-spacing: 0em;
-text-align: left;
+  .TeamRoles {
+    display: flex;
+    gap: 10px;
+  }
 
-}
+  .TeamRoles p {
+    border: 1px solid black;
+    padding: 5px 10px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    font-size: 12px;
+  }
 
-.TeamRoles{
-  display: flex;
-  gap: 10px;
-}
+  .TeamInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    padding: 30px 0;
+    display: none;
+  }
 
-.TeamRoles p{
-  border: 1px solid black;
-  padding: 5px 10px;
-  border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
-  font-size: 12px;
-}
+  .contactSection {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-.TeamInfo{
-  display: flex;
-  flex-direction: column;
-  gap:80px;
-  padding: 30px 0;
-  display: none;
-}
+  .contactCon {
+    height: 100%;
+    width: 97%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 80px 0;
+    flex-direction: column;
+  }
 
+  .contactBoxOneCon {
+    width: 90%;
+    height: auto;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    display: flex;
+    padding: 20px 20px;
+    background: #ececec;
+    gap: 20px;
+  }
+
+  .contactBoxOneInfo {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 20px;
+    flex: 2;
+  }
+
+  .contactBoxOneInfo p {
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 60px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: black;
+  }
+
+  .contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .formInput {
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: transparent;
+    outline: none;
+    height: 30px;
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+  }
+
+  label {
+    color: black;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .formSubmit {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+  }
+
+  .formSubmit button {
+    padding: 5px 10px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border: 1px solid black;
+    color: black;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: auto;
+  }
+
+  .formSubmit button:hover {
+    background-color: white;
+    cursor: pointer;
+  }
+
+  .contactBoxOneImg {
+    flex: 1;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    overflow: hidden;
+    display: none;
+  }
+
+  .contactBoxOneImg img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .contactBoxTwoCon {
+    width: 90%;
+    height: auto;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+    background: #d7d7d7;
+    gap: 20px;
+  }
+
+  .contactBoxTwoHeader {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .contactBoxTwoHeader p {
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: black;
+  }
+
+  .contactBoxTwoHeader img {
+    width: 100px;
+    height: 50px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    object-fit: cover;
+  }
+
+  .contactBoxTwoText {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: start;
+  }
+
+  .contactBoxTwoText p {
+    color: black;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 90%;
+  }
+
+  .contactLink {
+    display: flex;
+    gap: 10px;
+  }
+
+  .contactLink p {
+    color: black;
+    padding: 5px 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    font-size: 12px;
+  }
+
+  .contactLink p:hover {
+    background-color: white;
+    cursor: pointer;
+  }
+
+  .footerCon p {
+    color: #ff4d00;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: -0.03em;
+    text-align: left;
+  }
 }
 
 @media (780px <= width <= 960px) {
@@ -4357,337 +4975,534 @@ text-align: left;
     width: 70%;
   }
 
-  
-.responsesSection {
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #f3f3f3;
-  overflow: hidden;
-}
+  .responsesSection {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f3f3f3;
+    overflow: hidden;
+  }
 
-.responsesContainer {
-  width: 97%;
-  height: 100%;
-  padding: 80px 0;
-}
+  .responsesContainer {
+    width: 97%;
+    height: 100%;
+    padding: 80px 0;
+  }
 
-.responsesHeader {
-  display: flex;
-  height: 20rem;
-}
+  .responsesHeader {
+    display: flex;
+    height: 20rem;
+  }
 
-.responHeaderOneContainer {
-  flex: 1;
-  height: 100%;
-  display: flex;
-  justify-content: start;
-}
+  .responHeaderOneContainer {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+  }
 
-.reponHeaderOne {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
+  .reponHeaderOne {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
 
-.reponHeaderOne p:nth-child(1) {
-  font-size: 30px;
-  font-weight: 400;
-  line-height: 36px;
-  letter-spacing: 0em;
-  text-align: left;
-  color: black;
-}
+  .reponHeaderOne p:nth-child(1) {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: black;
+  }
 
-.reponHeaderOne p:nth-child(2) {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 17px;
-  letter-spacing: 0em;
-  text-align: left;
-  color: #000000;
-  width: 65%;
-}
+  .reponHeaderOne p:nth-child(2) {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #000000;
+    width: 65%;
+  }
 
-.responHeaderTwoContainer {
-  flex: 1;
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
+  .responHeaderTwoContainer {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
 
-.responHeaderTwo {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  align-items: start;
-}
+  .responHeaderTwo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: start;
+  }
 
-.responHeaderTwo p:nth-child(1) {
-  font-size: 30px;
-  font-weight: 500;
-  line-height: 36px;
-  letter-spacing: 0em;
-  text-align: left;
-  color: #ff4d00;
-  text-transform: uppercase;
-}
-.responHeaderTwo p:nth-child(2) {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 17px;
-  letter-spacing: 0em;
-  text-align: left;
-  color: #000000;
-  width: 90%;
-}
-.responSliderContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: end;
-  gap: 20px;
-  overflow: hidden;
-}
+  .responHeaderTwo p:nth-child(1) {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #ff4d00;
+    text-transform: uppercase;
+  }
+  .responHeaderTwo p:nth-child(2) {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #000000;
+    width: 90%;
+  }
+  .responSliderContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 20px;
+    overflow: hidden;
+  }
 
-.sliderboxList {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  width: 100%;
-  height: auto;
-}
+  .sliderboxList {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+  }
 
+  .responSliderBox {
+    height: 250px;
+    width: auto;
+    background-color: #ff4d00;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px 15px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    cursor: pointer;
+  }
 
+  .responBoxHeaderContainer {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
 
-.responSliderBox {
-  height: 250px;
-  width: auto;
-  background-color: #ff4d00;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  padding: 15px 15px;
-  border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
-  cursor: pointer;
-}
+  .repsonBoxImg {
+    width: 60px;
+    height: 55px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    overflow: hidden;
+  }
 
-.responBoxHeaderContainer {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-}
+  .repsonBoxImg img {
+    height: 100%;
+    width: 100%;
+  }
 
-.repsonBoxImg {
-  width: 60px;
-  height: 55px;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-  overflow: hidden;
-}
+  .responBoxHeaderText {
+    width: 100%;
+  }
 
-.repsonBoxImg img {
-  height: 100%;
-  width: 100%;
-}
+  .responBoxHeaderText p {
+    color: black;
+  }
+  .responBoxHeaderText p:nth-child(1) {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .responBoxHeaderText p:nth-child(2) {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .responBoxHeaderText p:nth-child(3) {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
 
-.responBoxHeaderText {
-  width: 100%;
-}
+  .responBoxText p {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: black;
+  }
 
-.responBoxHeaderText p {
-  color: black;
-}
-.responBoxHeaderText p:nth-child(1) {
-  font-size: 17px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0em;
-  text-align: left;
-}
-.responBoxHeaderText p:nth-child(2) {
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 16px;
-  letter-spacing: 0em;
-  text-align: left;
-}
-.responBoxHeaderText p:nth-child(3) {
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 15px;
-  letter-spacing: 0em;
-  text-align: left;
-}
+  .responSliderNav {
+    display: flex;
+    gap: 10px;
+  }
 
-.responBoxText p {
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 16px;
-  letter-spacing: 0em;
-  text-align: left;
-  color: black;
-}
+  .responSliderNav button {
+    padding: 5px 15px;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    color: black;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    cursor: pointer;
+  }
 
-.responSliderNav {
-  display: flex;
-  gap: 10px;
-}
+  .teamSection {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+  }
 
-.responSliderNav button {
-  padding: 5px 15px;
-  background-color: transparent;
-  border: 1px solid black;
-  border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
-  color: black;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 18px;
-  letter-spacing: 0em;
-  cursor: pointer;
-}
+  .teamContainer {
+    width: 97%;
+    height: 100%;
+    padding: 80px 0;
+  }
 
-.teamSection{
-  height: auto;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  overflow: hidden;
-}
+  .teamHeader {
+    padding: 20px 0;
+  }
 
-.teamContainer{
-  width: 97%;
-  height: 100%;
-  padding: 80px 0;
-}
+  .scrollheader {
+    display: flex;
+    align-items: center;
+    height: auto;
+    gap: 20px;
+  }
 
-.teamHeader{
-  padding: 20px 0;
-}
+  .scrollheader p {
+    font-size: 55px;
+    font-weight: 600;
+    line-height: 66px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #ff4d00;
+  }
 
-.scrollheader{
-  display: flex;
-  align-items: center;
-  height: auto;
-  gap: 20px;
-}
+  .teamListContainer {
+    width: auto;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    flex-basis: auto;
+    overflow: hidden;
+    padding: 50px 0;
+  }
 
-.scrollheader p{
-font-size: 55px;
-font-weight: 600;
-line-height: 66px;
-letter-spacing: 0em;
-text-align: left;
-color: #ff4d00;
-}
+  .teamBox {
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
 
+  .teamBoxImg {
+    height: 385px;
+    width: 340px;
+    overflow: hidden;
+  }
 
+  .teamBoxImg img {
+    height: 100%;
+    width: 100%;
+  }
 
-.teamListContainer{
-  width: auto;
-  display: flex;
-  align-items: center;
-  gap: 70px;
-  flex-basis: auto;
-  overflow: hidden;
-  padding: 50px 0;
-}
+  .teamName p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
 
-.teamBox{
-  height: auto;
-  width: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
+  .TeamRoles {
+    display: flex;
+    gap: 10px;
+  }
 
-.teamBoxImg{
-  height: 385px;
-  width: 340px;
-  overflow: hidden;
-}
+  .TeamRoles p {
+    border: 1px solid black;
+    padding: 5px 10px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    font-size: 12px;
+  }
 
-.teamBoxImg img{
-  height: 100%;
-  width: 100%;
-}
+  .TeamInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    padding: 30px 0;
+  }
 
-.teamName p{
+  .teamInfoOne {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+  }
 
-font-size: 20px;
-font-weight: 400;
-line-height: 24px;
-letter-spacing: 0em;
-text-align: left;
+  .teamInfoOne p {
+    width: 60%;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .teamInfoTwo {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+  }
 
-}
+  .teamInfoTwo p {
+    width: 60%;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
 
-.TeamRoles{
-  display: flex;
-  gap: 10px;
-}
+  .contactSection {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-.TeamRoles p{
-  border: 1px solid black;
-  padding: 5px 10px;
-  border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
-  font-size: 12px;
-}
+  .contactCon {
+    height: 100%;
+    width: 97%;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 50px 0;
+    flex-direction: column;
+  }
 
-.TeamInfo{
-  display: flex;
-  flex-direction: column;
-  gap:80px;
-  padding: 30px 0;
-}
+  .contactBoxOneCon {
+    width: 90%;
+    height: auto;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    display: flex;
+    padding: 20px 20px;
+    background: #ececec;
+    gap: 80px;
+  }
 
-.teamInfoOne{
-  height: auto;
-  width: 100%;
-  display: flex;
-  justify-content: start;
-}
+  .contactBoxOneInfo {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 30px;
+    flex: 2;
+  }
 
-.teamInfoOne p{
-  width: 60%;
-font-size: 20px;
-font-weight: 400;
-line-height: 24px;
-letter-spacing: 0em;
-text-align: left;
-}
-.teamInfoTwo{
-  height: auto;
-  width: 100%;
-  display: flex;
-  justify-content: end;
-}
+  .contactBoxOneInfo p {
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 60px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: black;
+  }
 
-.teamInfoTwo p{
-  width: 60%;
-font-size: 20px;
-font-weight: 400;
-line-height: 24px;
-letter-spacing: 0em;
-text-align: left;
-}
+  .contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
 
+  .formInput {
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: transparent;
+    outline: none;
+    height: 30px;
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+  }
 
+  label {
+    color: black;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .formSubmit {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+  }
+
+  .formSubmit button {
+    padding: 5px 10px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border: 1px solid black;
+    color: black;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: auto;
+  }
+
+  .formSubmit button:hover {
+    background-color: white;
+    cursor: pointer;
+  }
+
+  .contactBoxOneImg {
+    flex: 1;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .contactBoxOneImg img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .contactBoxTwoCon {
+    width: 90%;
+    height: auto;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+    background: #d7d7d7;
+    gap: 30px;
+  }
+
+  .contactBoxTwoHeader {
+    display: flex;
+    gap: 50px;
+  }
+
+  .contactBoxTwoHeader p {
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: black;
+  }
+
+  .contactBoxTwoHeader img {
+    width: 164px;
+    height: 50px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    object-fit: cover;
+  }
+
+  .contactBoxTwoText {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: end;
+  }
+
+  .contactBoxTwoText p {
+    color: black;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 60%;
+  }
+
+  .contactLink {
+    display: flex;
+    gap: 10px;
+  }
+
+  .contactLink p {
+    color: black;
+    padding: 5px 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+  }
+
+  .contactLink p:hover {
+    background-color: white;
+    cursor: pointer;
+  }
+
+  .footerCon p {
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 115px;
+    letter-spacing: -0.03em;
+    text-align: left;
+    color: #ff4d00;
+  }
 }

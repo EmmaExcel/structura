@@ -1,5 +1,7 @@
 import "./App.css";
 import { CaseStudies } from "./components/CaseStudies";
+import { Contact } from "./components/Contact";
+import { Footer } from "./components/Footer";
 import { Hero } from "./components/Hero";
 import { Portfolios } from "./components/Portfolios";
 import { Responses } from "./components/Responses";
@@ -17,6 +19,8 @@ function App() {
       <CaseStudies/>
       <Responses/>
       <Team/>
+      <Contact/>
+      <Footer/>
     </>
   );
 }
